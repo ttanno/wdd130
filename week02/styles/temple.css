@@ -1,0 +1,88 @@
+/* General reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+/* Header */
+header {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+/* Main content */
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+main picture {
+    display: block;
+}
+
+main img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 10);
+}
+
+/* Sections */
+section {
+    background-color: #e6e6e6;
+    text-align: left;
+    padding: 20px 25px;
+    margin-top: 30px;
+    border-radius: 2px;
+}
+
+section h2 {
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #999999;
+}
+
+section p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+section p:last-child {
+    margin-bottom: 0;
+}
+
+section a {
+    color: #1a56db;
+    text-decoration: underline;
+}
+
+section ul {
+    list-style-position: inside;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}

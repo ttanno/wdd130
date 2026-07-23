@@ -40,6 +40,11 @@ h2 {
     color: var(--primary-color);
 }
 
+h2 {
+    border-bottom: 2px solid var(--accent2-color);
+    padding-bottom: 4px;
+}
+
 /* ===== Basic Spacing ===== */
 nav,
 p,
@@ -61,6 +66,7 @@ nav ul {
     display: flex;
     background-color: var(--primary-color);
     padding: 10px;
+    border-bottom: 3px solid var(--secondary-color);
 }
 
 nav a {
@@ -102,6 +108,7 @@ nav a:hover {
     left: 20px;
     width: 60%;
     background-color: rgba(255, 255, 255, 0.85);
+    border: 2px solid var(--secondary-color);
     border-radius: 8px;
 }
 

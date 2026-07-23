@@ -1,70 +1,16 @@
-/* ===== CSS Variables ===== */
-:root {
-    --primary-color: #055a05;
-    /* forest green */
-    --secondary-color: #f4a261;
-    /* warm sand */
-    --accent1-color: #264653;
-    /* dark slate blue */
-    --accent2-color: #e9c46a;
-    /* light golden yellow */
-    --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: Arial, Helvetica, sans-serif;
-}
-
-/* ===== Box Model Reset ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ===== Base Body ===== */
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-}
-
-/* ===== Limit Page Width ===== */
-header,
-main,
-footer {
-    width: 840px;
-    margin: 0 auto;
-}
-
-/* ===== Headings ===== */
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-/* ===== Basic Spacing ===== */
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
-/* ===== Header / Nav ===== */
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    background-color: var(--primary-color);
+nav {
+    background-color: darkblue;
     padding: 10px;
 }
 
 nav a {
-    color: #fff;
+    color: white;
     display: inline-block;
     padding: 10px 20px;
     text-decoration: none;
@@ -74,74 +20,66 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* ===== Hero Section ===== */
-.hero {
-    position: relative;
+h1 {
+    color: darkblue;
+    margin-bottom: 15px;
 }
 
-.hero img {
-    display: block;
-    width: 100%;
+main {
+    max-width: 840px;
+    padding: 1rem;
+}
+
+main img {
+    float: right;
+    width: 150px;
+    height: auto;
+    margin: 0 0 1rem 1rem;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
+aside {
+    position: relative;
+    width: 22rem;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
     height: auto;
 }
 
-.hero h1 {
+aside h2 {
     position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: .3rem .7rem;
+    border-radius: 5px;
 }
 
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    width: 60%;
-    background-color: rgba(255, 255, 255, 0.85);
-    border-radius: 8px;
-}
-
-.hero article img {
-    float: right;
-    width: 125px;
-    margin: 0 0 8px 8px;
-    border: 1px solid #000;
-    box-shadow: 0 0 15px gray;
-}
-
-/* ===== History Section ===== */
-.history p {
+p {
     line-height: 1.4;
 }
 
-/* ===== Adventure Section ===== */
-.adventure {
-    text-align: center;
-}
-
-/* ===== Footer ===== */
 footer {
     margin-top: 20px;
-    border-top: 1px solid var(--accent1-color);
+    border-top: 1px solid #000;
     text-align: center;
     padding: 10px;
 }
 
-.socialmedia {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-}
+/* Class Selectors */
 
-.socialmedia a {
-    text-decoration: none;
-}
+.box {
+    margin: 1rem 0;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
 
-.socialmedia img {
-    width: 32px;
-    height: 32px;
 }

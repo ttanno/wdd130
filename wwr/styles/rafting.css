@@ -186,6 +186,140 @@ nav a:hover {
     color: var(--accent1-color);
 }
 
+/* ===== Contact Page ===== */
+.contact-info address {
+    font-style: normal;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.contact-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-items: start;
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 8px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid var(--accent2-color);
+    border-radius: 8px;
+}
+
+.contact-form p {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 12px;
+    padding: 0;
+}
+
+.contact-form label {
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 8px;
+    border: 1px solid var(--accent1-color);
+    border-radius: 4px;
+    font-family: var(--body-font);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form fieldset.purpose {
+    border: 1px solid var(--accent1-color);
+    border-radius: 4px;
+    margin: 0 0 12px;
+    padding: 8px;
+}
+
+.contact-form fieldset.purpose legend {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.contact-form fieldset.purpose p {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin: 4px 0;
+}
+
+.contact-form fieldset.purpose label {
+    margin: 0;
+    font-weight: normal;
+}
+
+.contact-form p.newsletter {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-form p.newsletter label {
+    margin: 0;
+    font-weight: normal;
+}
+
+.contact-form button[type="submit"] {
+    align-self: flex-start;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: var(--accent1-color);
+}
+
+/* ===== Employees Section ===== */
+.employees {
+    text-align: center;
+}
+
+.employee-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.employee-gallery figure {
+    flex: 1 1 0;
+    min-width: 0;
+    margin: 0;
+}
+
+.employee-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.employee-gallery figcaption {
+    margin-top: 6px;
+    font-size: 0.9rem;
+    color: var(--accent1-color);
+}
+
 /* ===== Footer ===== */
 footer {
     display: flex;
